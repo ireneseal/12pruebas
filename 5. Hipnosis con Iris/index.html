@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hipnosis con Iris</title>
+    <link rel="stylesheet" href="css/style.css">
+    
+</head>
+<body>
+    <div class="container">
+
+        <div class="phrase">
+            
+            <img src="img/speach_bubble.svg" alt="speach bubble">
+
+        </div>
+        <div class="eye__right"></div>
+            <div class="eye__left"></div>
+
+        <div class="image__container">
+            
+            <img src="img/iris.jpg" alt="Hipnosis con Iris">
+        </div>
+
+
+        <button>HIPNOSIS</button>
+
+    </div>
+
+    <script>
+
+        const button = document.querySelector('button');
+        button.addEventListener('click', hipnosis);
+
+        const phrase = document.querySelector('.phrase');
+
+        const eyeLeft = document.querySelector('.eye__left');
+        const eyeRight = document.querySelector('.eye__right')
+
+
+        function hipnosis (){
+
+            phrase.classList.add('show__phrase');
+            phrase.classList.remove('phrase');
+
+            eyeRight.classList.add('eye__right-show');
+            eyeRight.classList.remove('eye__right');
+
+            eyeLeft.classList.add('eye__left-show');
+            eyeLeft.classList.remove('eye__left');
+
+        }
+
+
+    </script>
+
+
+    
+</body>
+</html>
