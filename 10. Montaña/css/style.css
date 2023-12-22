@@ -1,0 +1,48 @@
+*{padding: 0; margin: 0; box-sizing: border-box;}
+
+body{
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+}
+
+.mountain__container{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding-left: 20px;
+    padding-right: 20px;
+    border: 2px solid aqua;
+    width: 400px;
+    height: 400px;
+    position: relative;
+}
+
+.row{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+button{
+    border: 2px solid aqua;
+    padding: 10px;
+    background-color: black;
+    color: aqua;
+}
+
+.snow{
+    position: absolute;
+    top: 80px;
+   
+}

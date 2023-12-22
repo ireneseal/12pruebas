@@ -1,0 +1,104 @@
+* {padding: 0; margin:0; box-sizing: border-box;};
+
+img{
+    width: 100%;
+}
+  
+.game {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgb(79,255,191);
+background: linear-gradient(90deg, rgba(79,255,191,1) 0%, rgba(248,90,255,1) 91%);
+}
+
+.game__container {
+    display: grid;
+    grid-template-columns: 2fr 1fr 2fr;
+    height: 400px;
+    width: 100%;
+    gap: 40px;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.game__fighter {
+    border-radius: 4px;
+    overflow: hidden;
+    border: 8px solid #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #2a2a2a;
+}
+
+.game__fighter-cilindrix{
+    position: relative;
+
+}
+
+.game__fighter-asterix{
+    position: relative;
+
+}
+
+.asterix .cilindrix{
+    width: 100%;
+    object-fit: cover;
+    object-position: top;
+}
+
+
+.button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.button button {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    padding: 10px 20px;
+    font-size: 20px;
+    border: 4px solid #000;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.points{
+    font-size: 1rem;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+}
+
+.points-cilindrix{
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    padding: 10px;
+    background-color: rgba(0, 0, 0, 0.5);
+
+}
+
+.points-asterix{
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    padding: 10px;
+    background-color: rgba(0, 0, 0, 0.5);
+
+}
+
+.winner{
+    border: 8px solid red;
+    animation: shake 0.2s ease-in;
+}
+
+.winner:before{
+    content: "WINNER";
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 2rem;
+    color: red;
+    position: absolute;
+}
+

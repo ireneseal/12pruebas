@@ -1,0 +1,50 @@
+*{padding: 0; margin: 0; box-sizing: border-box}
+
+img{
+    width: 100%;
+}
+
+.composicion{
+    background-image: url(../img/precipicio.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 600px;
+    width: 700px;
+    position: relative;
+}
+
+.asterix{
+    position: absolute;
+    top: 210px;
+    left: 60px;
+    width: 100px;
+}
+
+#myCanvas{
+    position: absolute;
+    top: 260px;
+    left: 110px;
+    transform: rotate(-2deg);
+}
+
+.left{
+    cursor: pointer;
+    width: 150px;
+    height: 50px;
+    
+    position: absolute;
+    top: 240px;
+    left: 0;
+    z-index: 20;
+}
+
+.right{
+    cursor: pointer;
+    width: 150px;
+    height: 50px;
+    
+    position: absolute;
+    top: 240px;
+    left: 550px;
+    z-index: 20;
+}
